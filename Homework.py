@@ -1,11 +1,11 @@
 from datetime import datetime
 string_date = "1987-09-24"
 datetime_date = datetime.strptime(string_date, "%Y-%m-%d").date()
-print(datetime_date)
+#print(datetime_date)
 datetime_today = datetime.today().date()
-print(datetime_today)
+#print(datetime_today)
 number_day = (datetime_today - datetime_date).days
-print(number_day)
+#print(number_day)
 
 def get_days_from_today(date_str):
     given_date = datetime.strptime(date_str, '%Y-%m-%d').date()
@@ -15,7 +15,7 @@ def get_days_from_today(date_str):
 
 date = "1987-09-24"
 days_difference = get_days_from_today(date)
-print("Days from", date, "to today:", days_difference)
+#print("Days from", date, "to today:", days_difference)
 
 
 import random
@@ -27,5 +27,5 @@ def get_numbers_ticket(min:int, max:int, quantity:int):
     result = set()
     while len(result) < quantity:
         result.add(random.randint(min,max))
-        return sorted(result)
+        print(result)
      
